@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaffeparty - Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class=" text-white flex flex-col min-h-screen">
+
+<!-- Header with Navbar -->
+<header class="bg-gray-900 py-4">
+    <div class="container mx-auto flex justify-around items-center px-4">
+        <!-- Logo -->
+        <h1 class="text-2xl font-bold">Kaffeparty</h1>
+
+        <!-- Navbar -->
+        <nav class="flex items-center space-x-4">
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                <li><a href="products.html" class="hover:text-gray-400">Products</a></li>
+                <li><a href="aboutus.html" class="hover:text-gray-400">About Us</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menuToggle" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden flex flex-col space-y-4 mt-4">
+                <a href="index.html" class="hover:text-gray-400">Home</a>
+                <a href="aboutus.html" class="hover:text-gray-400">About</a>
+                <a href="products.html" class="hover:text-gray-400">Products</a>
+            </div>
+        </nav>
+    </div>
+</header> 
+
+    <!-- Main Content Wrapper -->
+    <main class="max-w-4xl mx-auto p-6 space-y-10">
+
+        <!-- Kaffemaskiner Section -->
+        <section class="text-center">
+            <h2 class="text-2xl font-bold mb-6 text-black">Kaffemaskiner</h2>
+            
+            <!-- Machine Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Machine 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Kaffemaskin Modell A</h3>
+                    <img src="img/unsplash1.jpg" alt="Kaffemaskin Modell A" class="w-full h-40 object-cover mb-4 rounded-lg">
+                    <p class="mb-2">Pris: 5000 SEK</p>
+                    <p>En avancerad kaffemaskin som ger perfekt kaffe varje gång.</p>
+                </div>
+
+                <!-- Machine 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Kaffemaskin Modell B</h3>
+                    <img src="img/unsplash2.jpg" alt="Kaffemaskin Modell B" class="w-full h-40 object-cover mb-4 rounded-lg">
+                    <p class="mb-2">Pris: 7000 SEK</p>
+                    <p>En lyxig kaffemaskin med avancerade funktioner för kaffeälskare.</p>
+                </div>
+
+                <!-- Machine 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Kaffemaskin Modell C</h3>
+                    <img src="img/unsplash3.jpg" alt="Kaffemaskin Modell C" class="w-full h-40 object-cover mb-4 rounded-lg">
+                    <p class="mb-2">Pris: 6000 SEK</p>
+                    <p>Den perfekta kaffemaskinen för företag och evenemang.</p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Kaffeparty Section -->
+        <section class="text-center">
+            <h2 class="text-2xl font-semibold mb-6">Kaffeparty</h2>
+            <div class="space-y-6">
+                
+                <!-- Company Section -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Företag</h3>
+                    <p>Boka ett kaffeparty för dina anställda och kunder.</p>
+                </div>
+
+                <!-- Private Section -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Privatpersoner</h3>
+                    <p>Upplev ett kaffeparty hemma med vänner och familj.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 py-4 text-center mt-auto">
+    <p>&copy; <span id="current-year"></span> Kaffeparty | Webmaster: bldzz</p>
+</footer>
+
+<script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

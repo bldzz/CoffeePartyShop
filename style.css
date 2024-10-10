@@ -1,0 +1,77 @@
+    
+    
+    
+    /* Custom CSS for Hero Section */
+    .hero-section {
+        height: 70vh; /* 70% of viewport height */
+        width: 100%;
+        background: url('img/coffee-4hjg-unspla.jpg') no-repeat center center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    /* Make hero section span 80% width and center it */
+    .hero-container {
+        min-width: 100%;
+        min-height: 100%;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.7); /* dark overlay for text contrast */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .image-realtive{
+        display: relative;
+    }
+
+    .overlay{
+        background-color: rgba(0, 0, 0, 0.7); /* dark overlay for text contrast */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    
+    .hero-text {
+        color: #ffffff;
+        
+    }
+
+    .font-edit{
+        font-size: 4em;
+        font-weight: bolder;
+    }
+
+    .font-edit2{
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+
+ 
+
+
+
+
+    .text-focus-in {
+        animation: text-focus-in 1.5s ease-in both;
+    }
+
+@keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
